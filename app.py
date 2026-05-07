@@ -160,7 +160,7 @@ def main():
         
         col1, col2, col3 = st.columns([1, 1, 1])
         with col2:
-            analyze_btn = st.button("🔍 Analyze Message", use_container_width=True, type="primary")
+            analyze_btn = st.button("🔍 Analyze Message", width="stretch", type="primary")
 
         if analyze_btn:
             if input_text:
@@ -198,7 +198,7 @@ def main():
             image = Image.open(uploaded_file)
             img_col1, img_col2 = st.columns([1, 1])
             with img_col1:
-                st.image(image, caption="Uploaded Content", use_container_width=True)
+                st.image(image, caption="Uploaded Content", width="stretch")
             
             with img_col2:
                 if st.button("🚀 Analyze Image", key="img_analyze", type="primary"):
@@ -345,7 +345,7 @@ def main():
         st.markdown("### 📈 Analytics")
         hist = st.session_state.analytics.get_history_df()
         if not hist.empty:
-            st.dataframe(hist, use_container_width=True)
+            st.dataframe(hist, width="stretch")
             st.pyplot(st.session_state.analytics.generate_summary_plot())
         else:
             st.info("No data yet.")
