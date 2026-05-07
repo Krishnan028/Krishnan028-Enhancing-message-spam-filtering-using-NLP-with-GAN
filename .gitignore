@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.sixth/
+uv.lock
+.replit
+replit.md
+attached_assets/
+*.egg-info/
+dist/
+build/
+.env
