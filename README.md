@@ -1,3 +1,15 @@
+---
+title: SMS Spam Guard AI
+emoji: 🛡️
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: "1.44.1"
+app_file: app.py
+pinned: false
+python_version: "3.11"
+---
+
 # SMS Spam Guard AI
 
 A multi-modal SMS spam detection system built with Streamlit and deep learning. It analyzes **text messages, images, and videos** to identify spam content using a combination of GAN-based text classification, CNN-based image analysis, and OCR text extraction.
